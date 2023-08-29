@@ -12,6 +12,7 @@ namespace FileDownload2
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://*:5501")
                 .Build();
 
             host.Run();
